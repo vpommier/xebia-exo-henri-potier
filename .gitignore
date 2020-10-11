@@ -1,0 +1,5 @@
+# Env files
+/env/**/*.*
+!/env/*.sample.*
+!/env/repositories.env
+!/env/infra/test.env

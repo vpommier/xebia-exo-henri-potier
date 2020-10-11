@@ -1,0 +1,42 @@
+{
+  "availability-zones:account=497217888363:region=eu-west-1": [
+    "eu-west-1a",
+    "eu-west-1b",
+    "eu-west-1c"
+  ],
+  "vpc-provider:account=497217888363:filter.vpc-id=vpc-b7d418ce:region=eu-west-1:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-b7d418ce",
+    "vpcCidrBlock": "172.31.0.0/16",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-eaf5fca2",
+            "cidr": "172.31.16.0/20",
+            "availabilityZone": "eu-west-1a",
+            "routeTableId": "rtb-2e48bf56"
+          },
+          {
+            "subnetId": "subnet-1e9ce744",
+            "cidr": "172.31.32.0/20",
+            "availabilityZone": "eu-west-1b",
+            "routeTableId": "rtb-2e48bf56"
+          },
+          {
+            "subnetId": "subnet-42615824",
+            "cidr": "172.31.0.0/20",
+            "availabilityZone": "eu-west-1c",
+            "routeTableId": "rtb-2e48bf56"
+          }
+        ]
+      }
+    ]
+  },
+  "hosted-zone:account=497217888363:domainName=aws-temp-account002.techx.fr:region=eu-west-1": {
+    "Id": "/hostedzone/Z06489393CAXZ6R47TBAS",
+    "Name": "aws-temp-account002.techx.fr."
+  }
+}

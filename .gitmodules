@@ -1,0 +1,3 @@
+[submodule "stack/api"]
+	path = stack/api
+	url = git@github.com:xebia-france/cloud-henri-potier.git

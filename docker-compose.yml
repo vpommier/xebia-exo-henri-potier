@@ -1,0 +1,18 @@
+version: '2.4'
+services:
+  api:
+    build:
+      context: stack/api
+      dockerfile: Dockerfile
+    environment:
+      - EVENTBUS_NAME=StackBackendBus8A86E9EE
+    ports:
+      - '5000:5000'
+
+  factory:
+    build:
+      context: ci/factory
+      dockerfile: Dockerfile
+    working_dir: /workdir
+    volumes:
+      - .:/workdir:rw
